@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    [
+      "babel-plugin-styled-components", 
+      {
+        "displayName": true,
+        "fileName": false
+      }
+    ]
+  ],
+  "overrides": [
+    {
+      "test": "/node_modules[\\\\/]@lc[\\\\/]rc-cropper[\\\\/].*\\.(js|jsx|ts|tsx)$/",
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "namespace": "rc-cropper-",
+            "displayName": false,
+            "fileName": false,
+            "minify": true,
+            "pure": true,
+            "transpileTemplateLiterals": true
+          }
+        ]
+      ]
+    }
+  ]
+}

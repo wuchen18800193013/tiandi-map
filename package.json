@@ -1,0 +1,76 @@
+{
+  "name": "@lc/tiandi-map",
+  "private": false,
+  "version": "0.0.58",
+  "type": "module",
+  "description": "基于 React + Vite 开发的天地图组件，支持多种地图类型展示",
+  "keywords": [
+    "react",
+    "map",
+    "tianditu",
+    "component"
+  ],
+  "author": "wuchen 18800193013@163.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://codeup.aliyun.com/lcai/lcai-fe-component/tiandi-map/tree/master"
+  },
+  "bugs": {
+    "url": "https://codeup.aliyun.com/lcai/lcai-fe-component/tiandi-map/tree/master"
+  },
+  "homepage": "https://codeup.aliyun.com/lcai/lcai-fe-component/tiandi-map/tree/master",
+  "main": "dist/tiandi-map.es.js",
+  "module": "dist/tiandi-map.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/tiandi-map.es.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "storybook dev -p 6007",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@lc/fork-console-base-theme": "^0.1.20",
+    "@lc/rc-cropper": "^0.1.29",
+    "@lc/rc-icon": "^0.1.26",
+    "cropperjs": "^1.6.2",
+    "gcoord": "^1.0.7",
+    "html2canvas": "^1.4.1"
+  },
+  "peerDependencies": {
+    "antd": "^5.x",
+    "react": "^18.x",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.x"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.2.0",
+    "antd": "^5.27.0",
+    "styled-components": "^6.1.19",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "@storybook/addon-essentials": "^7.0.0",
+    "@storybook/addon-interactions": "^7.0.0",
+    "@storybook/addon-links": "^7.0.0",
+    "@storybook/blocks": "^7.0.0",
+    "@storybook/react": "^7.0.0",
+    "@storybook/react-vite": "^7.0.0",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "storybook": "^7.0.0",
+    "vite": "^4.2.0"
+  }
+}
